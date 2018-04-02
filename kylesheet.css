@@ -1,0 +1,11 @@
+.is-circle {
+	border-radius: 9999px;
+}
+
+/* overrides */
+
+.navbar-item img {
+	width: 3rem;
+	height: 3rem;
+	max-height: 3rem;
+}
