@@ -17,13 +17,21 @@
   </style>
 </head>
 <body>
-  <section class="hero is-fullheight is-default is-bold">
+  <section class="hero is-large is-default is-bold" style="position: relative;">
+
+    <div class="background-video-overlay"></div>
+    <div class="fullscreen-bg">
+      <video class="fullscreen-bg__video" poster="images/background-video.jpg" id="bgvid" playsinline autoplay muted loop>
+      <source src="videos/background-video.mp4" type="video/mp4">
+    </video>
+    </div>
+
   <div class="hero-head">
     <nav class="navbar">
       <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item" href="../">
-            <img src="images/logo.gif" alt="Logo" class="logo is-circle">
+            <img src="images/jerome-the-drone-logo-2.svg" alt="Logo" class="logo">
           </a>
           <span class="navbar-burger burger" data-target="navbarMenu">
             <span></span>
@@ -32,12 +40,13 @@
           </span>
         </div>
         <div id="navbarMenu" class="navbar-menu">
- <div class="navbar-end"><div class="tabs is-right">
-  <ul>
-    <li class="is-active"><a>Home</a></li>
-    <li><a href="">Instagram</a></li>
-  </ul>
-</div>
+           <div class="navbar-end">
+              <div class="tabs is-right">
+              <ul>
+                <li class="is-active"><a>Home</a></li>
+                <li><a href="">Instagram</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -45,29 +54,79 @@
   </div>
     <div class="hero-body">
       <div class="container has-text-centered">
-        <div class="columns is-vcentered">
-          <div class="column is-5">
-            <figure class="image is-4by3">
-              <img src="images/wrecks--1024.jpg" alt="Description">
-            </figure>
+        <h1 class="title is-white">
+          Tell your story from the sky.
+        </h1>
+        <h2 class="subtitle is-white">
+          Jerome the Drone produces aerial masterpieces that put the big picture right in front of your audience.
+        </h2>
+        <p class="has-text-centered">
+          <a class="button is-medium is-info is-outlined">
+            Tell us about your project
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="is-spacing"></section>
+
+  <section class="is-large">
+    <div class="container">
+      <div class="tile is-ancestor">
+        <div class="tile is-vertical is-8">
+          <div class="tile">
+            <div class="tile is-parent is-vertical">
+              <article class="tile is-child notification tile-image-1">
+                <p class="title"></p>
+                <p class="subtitle"></p>
+              </article>
+              <article class="tile is-child notification tile-image-2">
+                <p class="title"></p>
+                <p class="subtitle"></p>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification tile-image-3">
+                <p class="title"></p>
+                <p class="subtitle"></p>
+              </article>
+            </div>
           </div>
-          <div class="column is-6 is-offset-1">
-            <h1 class="title is-2">
-              Meet Jerome the Drone. Your talented little friend in the sky.
-            </h1>
-            <h2 class="subtitle is-4">
-              Aerial photography and video can help you tell your story, and Jerome has the best eyes in the sky.
-            </h2>
-            <br>
-            <p class="has-text-centered">
-              <a class="button is-medium is-info is-outlined">
-                Tell us about your project
-              </a>
-            </p>
+          <div class="tile is-parent">
+            <article class="tile is-child notification tile-image-4">
+              <p class="title"></p>
+              <p class="subtitle"></p>
+              <div class="content">
+                <!-- Content -->
+              </div>
+            </article>
           </div>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child notification tile-image-5">
+            <div class="content">
+              <p class="title"></p>
+              <p class="subtitle"></p>
+              <div class="content">
+                <!-- Content -->
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </div>
+  </section>
+
+  <section class="is-large">
+    <div class="container">
+      <div class="columns is-mobile">
+        <div class="column is-half is-offset-one-quarter">
+          <h1>Hello World</h1>
+        </div>
+      </div>
+    </div>
+  </section>
 
     <div class="hero-foot">
       <div class="container">
