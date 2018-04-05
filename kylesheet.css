@@ -1,7 +1,38 @@
+/* fonts */
+
+@font-face {
+  font-family: "A";
+  font-weight: 100;
+  font-style: lighter;
+  src: url("fonts/A-Thin.otf");
+}
+
+@font-face {
+  font-family: "A";
+  font-weight: 300;
+  font-style: normal;
+  src: url("fonts/A-Text.otf");
+}
+
+@font-face {
+  font-family: "A";
+  font-weight: 900;
+  font-style: bold;
+  src: url("fonts/A-ExtraBold.otf");
+}
+
+html, body {
+	font-family: "A";
+}
+
 /* custom */
 
 .is-white {
 	color: white;
+}
+
+.has-text-shadow {
+	text-shadow: 0px 0px 88px rgba(0, 0, 0, 1);
 }
 
 .is-circle {
@@ -10,6 +41,14 @@
 
 .is-spacing {
 	height: 4rem;
+}
+
+.is-half-spacing {
+	height: 2rem;
+}
+
+.is-quarter-spacing {
+	height: 1rem;
 }
 
 /* tile images */
@@ -71,6 +110,21 @@
 .tabs a {
 	color: white;
 	border-bottom-color: white;
+	opacity: 0.8;
+	transition: .5s;
+}
+
+.tabs a:hover {
+	color: white;
+	border-bottom-color: white;
+	opacity: 1;
+}
+
+.tabs li.is-active a {
+	color: white;
+	border-bottom-color: white;
+	font-weight: bold;
+	opacity: 1;
 }
 
 .hero-head {
