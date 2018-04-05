@@ -127,6 +127,13 @@ html, body {
 	opacity: 1;
 }
 
+.tabs a.button {
+  opacity: 1;
+  border: none;
+  color: black;
+  margin-left: 1rem;
+}
+
 .hero-head {
 	padding-top: .5rem;
 }
@@ -166,6 +173,7 @@ html, body {
   left: 0;
   overflow: hidden;
   z-index: -100;
+  background: url('images/background-video.jpg') center center / cover no-repeat;
 }
 
 .fullscreen-bg__video {
@@ -195,7 +203,7 @@ html, body {
     background: url('../img/videoframe.jpg') center center / cover no-repeat;
   }
 
-  .fullscreen-bg__video {
+  /*.fullscreen-bg__video {
     display: none;
-  }
+  }*/
 }
