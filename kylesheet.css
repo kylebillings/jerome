@@ -32,7 +32,7 @@ html, body {
 }
 
 .has-text-shadow {
-	text-shadow: 0px 0px 88px rgba(0, 0, 0, 1);
+	text-shadow: 0px 0px 120px rgba(0, 0, 0, 1);
 }
 
 .is-circle {
@@ -49,6 +49,25 @@ html, body {
 
 .is-quarter-spacing {
 	height: 1rem;
+}
+
+.image.is-168x168 {
+  height: 168px;
+  width: 168px;
+}
+
+.image.is-256x256 {
+  height: 256px;
+  width: 256px;
+}
+
+#instagram-icon {
+  opacity: .5;
+  transition: .5s;
+}
+
+#instagram-icon:hover {
+  opacity: 1;
 }
 
 /* tile images */
@@ -162,7 +181,7 @@ html, body {
     left: 0px;
     z-index: -95;
     background: black;
-    opacity: 0.2;
+    opacity: 0.33;
 }
 
 .fullscreen-bg {
@@ -200,7 +219,7 @@ html, body {
 
 @media (max-width: 767px) {
   .fullscreen-bg {
-    background: url('../img/videoframe.jpg') center center / cover no-repeat;
+    background: url('images/background-video.jpg') center center / cover no-repeat;
   }
 
   /*.fullscreen-bg__video {
