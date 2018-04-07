@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jerome the Drone</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- Bulma Version 0.6.2-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" integrity="sha256-2k1KVsNPRXxZOsXQ8aqcZ9GOOwmJTMoOB5o5Qp1d6/s=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="kylesheet.css" />
+  <style type="text/css">
+    html,body {
+      font-family: 'A';
+    }
+  </style>
+</head>
+<body>
+  <section class="hero is-small is-default is-bold" style="position: relative;">
+
+    <div class="background-video-overlay"></div>
+    <div class="fullscreen-bg">
+      <video class="fullscreen-bg__video" poster="images/background-video.jpg" id="bgvid" playsinline autoplay muted loop>
+      <source src="videos/background-video.mp4" type="video/mp4">
+    </video>
+    </div>
+
+  <div class="hero-head">
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <span class="navbar-burger burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+           <div class="navbar-end">
+              <div class="tabs is-right">
+              <ul>
+                <li><a>Home</a></li>
+                <!-- <li><a href="">About Us</a></li> -->
+                <!-- <li><a href="">Prints</a></li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title is-white is-4 has-text-shadow" style="margin-bottom:2.5rem;">
+          Inspire your audience
+        </h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="section is-medium">
+    <div class="container has-text-centered">
+      <h2 class="title is-2">Contact Us</h2>
+      <div class="is-spacing"></div>
+      <div class="columns content">
+        <div class="column is-three-fifths is-offset-one-fifth">
+
+			<form action="https://formspree.io/contact@itsjeromethedrone.com" method="POST">
+				<div class="field is-horizontal">
+				  <div class="field-label is-normal">
+				    <label class="label">Email Address</label>
+				  </div>
+				  <div class="field-body">
+				    <div class="field">
+				      <div class="control">
+				        <input class="input" type="text" placeholder="What is your email address?">
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="field is-horizontal">
+				  <div class="field-label is-normal">
+				    <label class="label">Introduce Yourself</label>
+				  </div>
+				  <div class="field-body">
+				    <div class="field">
+				      <div class="control">
+				        <textarea class="textarea" placeholder="Thanks for reaching out. Tell us about you."></textarea>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</form>
+
+        </div>
+      </div>
+      <div class="is-spacing"></div>
+    </div>
+  </section>
+
+
+  <!-- <section>
+    <img src="images/ocean-pic-4.jpg" alt="" class="image">
+  </section> -->
+
+  <!-- <section class="is-medium">
+    <div class="container">
+      <div class="columns">
+        <div class="column content">
+          <h1><strong>Our Specialties</strong></h1>
+          <p>Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
+          <ul>
+            <li>In fermentum leo eu lectus mollis, quis dictum mi aliquet.</li>
+            <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>
+            <li>Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.</li>
+            <li>Ut non enim metus.</li>
+          </ul>
+
+          <div class="is-half-spacing"></div>
+
+          <p>
+            <a class="button is-large is-primary">
+              Contact Now
+            </a>
+          </p>
+          
+        </div>
+        <div class="column">
+          <figure class="is-square">
+            <img src="images/tile-image-3.jpg" alt="">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  
+  <section class="is-spacing"></section>
+
+  <!-- <section class="hero is-primary">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h2 class="subtitle">
+          Currently flying in <strong>Boston, Massachusetts</strong>
+        </h2>
+      </div>
+    </div>
+  </section> -->
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns">
+      <div class="column has-text-centered">
+        <figure class="image is-128x128" style="margin: 0 auto;">
+          <img src="images/faa.svg">
+        </figure>
+        <div class="is-quarter-spacing"></div>
+        <p><small>Licensed to Drone by the FAA.</small></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </section>
+  <script async type="text/javascript" src="../js/bulma.js"></script>
+</body>
+</html>
