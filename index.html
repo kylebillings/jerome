@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <!-- Bulma Version 0.6.2-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" integrity="sha256-2k1KVsNPRXxZOsXQ8aqcZ9GOOwmJTMoOB5o5Qp1d6/s=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="bulma.css" />
   <link rel="stylesheet" href="kylesheet.css" />
   <style type="text/css">
     html,body {
@@ -16,18 +16,17 @@
     }
   </style>
 </head>
-<body>
+<body class="has-navbar-fixed-top">
   <section class="hero is-large is-default is-bold" style="position: relative;">
-
     <div class="background-video-overlay"></div>
     <div class="fullscreen-bg">
       <video class="fullscreen-bg__video" poster="images/background-video.jpg" id="bgvid" playsinline autoplay muted loop>
-      <source src="videos/background-video.mp4" type="video/mp4">
-    </video>
+        <source src="videos/background-video.mp4" type="video/mp4">
+      </video>
     </div>
 
-  <div class="hero-head">
-    <nav class="navbar">
+  <div class="hero-head navbar">
+    <nav class="navbar is-fixed-top">
       <div class="container">
         <div class="navbar-brand">
           <span class="navbar-burger burger" data-target="navbarMenu">
@@ -38,12 +37,12 @@
         </div>
         <div id="navbarMenu" class="navbar-menu">
            <div class="navbar-end">
-              <div class="tabs is-right">
+              <div class="tabs is-right kyle-shadow">
               <ul>
                 <!-- <li class="is-active"><a>Home</a></li> -->
                 <!-- <li><a href="">About Us</a></li> -->
                 <!-- <li><a href="">Prints</a></li> -->
-                <li><a class="button is-inverted" href="contact.html">Contact Us</a></li>
+                <li><a class="button is-primary is-large" href="contact.html">Contact Us</a></li>
               </ul>
             </div>
           </div>
@@ -52,52 +51,80 @@
     </nav>
   </div>
     <div class="hero-body">
-      <div class="container has-text-centered">
-        <h1 class="title is-white is-1 has-text-shadow" style="margin-bottom:2.5rem;">
-          Inspire your audience
-        </h1>
-        <h2 class="subtitle is-4 is-white has-text-shadow">
-          We'll help you tell your brand's story from the sky.
-        </h2>
-        <div class="is-half-spacing"></div>
-        <p class="has-text-centered">
-          <a class="button is-large is-inverted" href="contact.html">
-            Contact Us
-          </a>
-        </p>
+      <div class="container">
+        <div class="columns">
+          <div class="column is-two-fifths">
+            <div id="hero-box" class="box kyle-shadow animated fadeInUp">
+              <article class="media">
+                <div class="media-content">
+                  <div class="">
+                    <h1 class="title is-1 is-bold" style="margin-bottom:2.5rem;">
+                      Inspire your audience
+                    </h1>
+                    <h2 class="subtitle is-4">
+                      We'll help you tell your brand's story from the sky.
+                    </h2>
+                    <div class="is-half-spacing"></div>
+                    <p>
+                      <a class="button is-large is-primary" href="contact.html">
+                        Contact Us
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-primary is-medium">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-half is-offset-one-quarter">
+            <h1 class="title is-1">
+              We are filmmakers with an eye for experiences and a passion for flight.
+            </h1>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="section is-medium">
     <div class="container has-text-centered">
-      <h2 class="title is-2">How we can help</h2>
+      <!-- <h2 class="title is-2">How we can help</h2> -->
       <div class="is-spacing"></div>
       <div class="columns content">
-        <div class="column">
+        <div class="column animated fadeInUp">
           <figure class="image is-256x256" style="margin: 0 auto;">
             <img src="images/flat-lay.jpg" class="is-circle">
           </figure>
           <div class="is-quarter-spacing"></div>
           <h1><strong>Photography</strong></h1>
-          <p>Delight your audience with a new perspective.</p>
-          <p></p>
+          <p>Delight your audience with a new perspective or capture moments in all their magnificence.</p>
+          <p class="small is-gray">Realtors. Wedding Planners. Marketers.</p>
         </div>
-        <div class="column">
+        <div class="column animated fadeInUp">
           <figure class="image is-256x256" style="margin: 0 auto;">
             <img src="images/inspire.jpg" class="is-circle">
           </figure>
           <div class="is-quarter-spacing"></div>
           <h1><strong>Video</strong></h1>
-          <p>Show your brand at its best with the highest-quality 6k footage. </p>
+          <p>Add 6K CinemaDNG/5.2K Apple ProRes aerial footage to your collection for fun and profit.</p>
+          <p class="small is-gray">Production Companies. Athletes. Event Organizers.</p>
         </div>
-        <div class="column">
+        <div class="column animated fadeInUp">
           <figure class="image is-256x256" style="margin: 0 auto;">
             <img src="images/camera.jpg" class="is-circle">
           </figure>
           <div class="is-quarter-spacing"></div>
-          <h1><strong>Creative Production</strong></h1>
-          <p>Tell your brand's story the way it deserves to be told.</p>
+          <h1><strong>Production</strong></h1>
+          <p>Work with our team of creatives to tell your story from beginning to end, from land and sky.</p>
+          <p class="small is-gray">Resorts. Startups. Organizations.</p>
         </div>
       </div>
       <div class="is-spacing"></div>
@@ -109,53 +136,81 @@
     </div>
   </section>
 
+  <section class="hero is-light is-medium">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title is-1 is-gray has-text-centered">
+          Places we've been
+        </h1>
+      </div>
+    </div>
+  </section>
 
-  <!-- <section>
-    <img src="images/ocean-pic-4.jpg" alt="" class="image">
-  </section> -->
+  <section class="is-spacing"></section>
 
-  <!-- <section class="is-medium">
+  <section class="is-medium is-hero">
     <div class="container">
       <div class="columns">
-        <div class="column content">
-          <h1><strong>Our Specialties</strong></h1>
-          <p>Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
-          <ul>
-            <li>In fermentum leo eu lectus mollis, quis dictum mi aliquet.</li>
-            <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>
-            <li>Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.</li>
-            <li>Ut non enim metus.</li>
-          </ul>
-
-          <div class="is-half-spacing"></div>
-
-          <p>
-            <a class="button is-large is-primary">
-              Contact Now
-            </a>
-          </p>
-          
+        <div class="column is-6">
+          <figure class="image is-square">
+            <video class="fullscreen-bg__video has-border-radius kyle-shadow" poster="images/background-video.jpg" id="bgvid" playsinline autoplay muted loop>
+              <source src="videos/hawaii.mp4" type="video/mp4">
+            </video>
+          </figure>
         </div>
-        <div class="column">
-          <figure class="is-square">
-            <img src="images/tile-image-3.jpg" alt="">
+        <div class="column is-4 hero-body">
+          <div class="content">
+            <h2>Hawaii</h2>
+            <p class="small is-gray">Some of the most stunning scenery</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="is-spacing"></div>
+
+  <section class="is-medium is-hero">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-4 hero-body is-offset-2">
+          <div class="content">
+            <h2>Australia</h2>
+            <p class="small is-gray">This is a description of the aforementioned location. It is very cool and we flew around doing these sorts of things.</p>
+          </div>
+        </div>
+        <div class="column is-6">
+          <figure class="image is-square">
+            <img class="has-border-radius kyle-shadow" src="images/tile-image-1.jpg">
           </figure>
         </div>
       </div>
     </div>
-  </section> -->
-  
-  <section class="is-spacing"></section>
+  </section>
 
-  <!-- <section class="hero is-primary">
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <h2 class="subtitle">
-          Currently flying in <strong>Boston, Massachusetts</strong>
-        </h2>
+  <section class="is-spacing"></section>
+  
+  <section class="is-medium is-hero">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-6">
+          <figure class="image is-square">
+            <video class="fullscreen-bg__video has-border-radius kyle-shadow" poster="images/background-video.jpg" id="bgvid" playsinline autoplay muted loop>
+              <source src="videos/moab.mp4" type="video/mp4">
+            </video>
+          </figure>
+        </div>
+        <div class="column is-4 hero-body">
+          <div class="content">
+            <h2>Utah</h2>
+            <p class="small is-gray">Some of the most stunning scenery</p>
+          </div>
+        </div>
       </div>
     </div>
-  </section> -->
+  </section>
+
+  <section class="is-spacing"></section>
 
   <footer class="footer">
   <div class="container">
